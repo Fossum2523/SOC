@@ -1,0 +1,91 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Dec 25 09:48:07 2023
+# Process ID: 5862
+# Current directory: /home/ubuntu/lab_mmatrix
+# Command line: vivado
+# Log file: /home/ubuntu/lab_mmatrix/vivado.log
+# Journal file: /home/ubuntu/lab_mmatrix/vivado.jou
+# Running On: ubuntu2004, OS: Linux, CPU Frequency: 2903.996 MHz, CPU Physical cores: 6, Host memory: 15708 MB
+#-----------------------------------------------------------
+start_gui
+create_project mmatrix /home/ubuntu/lab_mmatrix/mmatrix -part xc7z020clg400-1
+file mkdir /home/ubuntu/lab_mmatrix/mmatrix/mmatrix.srcs/sources_1/new
+close [ open /home/ubuntu/lab_mmatrix/mmatrix/mmatrix.srcs/sources_1/new/mmatrix.v w ]
+add_files /home/ubuntu/lab_mmatrix/mmatrix/mmatrix.srcs/sources_1/new/mmatrix.v
+update_compile_order -fileset sources_1
+file mkdir /home/ubuntu/lab_mmatrix/mmatrix/mmatrix.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/ubuntu/lab_mmatrix/mmatrix/mmatrix.srcs/sim_1/new/mmatrix_tb.v w ]
+add_files -fileset sim_1 /home/ubuntu/lab_mmatrix/mmatrix/mmatrix.srcs/sim_1/new/mmatrix_tb.v
+update_compile_order -fileset sim_1
+launch_simulation
+set_property top mmatrix_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+reset_simulation -simset sim_1 -mode behavioral
+launch_simulation
+set_property used_in_simulation false [get_files  /home/ubuntu/lab_mmatrix/mmatrix/mmatrix.srcs/sources_1/new/mmatrix.v]
+set_property used_in_simulation true [get_files  /home/ubuntu/lab_mmatrix/mmatrix/mmatrix.srcs/sources_1/new/mmatrix.v]
+set_property is_global_include true [get_files  /home/ubuntu/lab_mmatrix/mmatrix/mmatrix.srcs/sources_1/new/mmatrix.v]
+launch_simulation
+set_property is_global_include false [get_files  /home/ubuntu/lab_mmatrix/mmatrix/mmatrix.srcs/sources_1/new/mmatrix.v]
+set_property is_global_include true [get_files  /home/ubuntu/lab_mmatrix/mmatrix/mmatrix.srcs/sources_1/new/mmatrix.v]
+set_property is_global_include false [get_files  /home/ubuntu/lab_mmatrix/mmatrix/mmatrix.srcs/sources_1/new/mmatrix.v]
+launch_simulation
+launch_simulation
+launch_simulation
+source mmatrix_tb.tcl
+close_sim
+launch_simulation
+source mmatrix_tb.tcl
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/mmatrix_tb/m0/matrix_0}} {{/mmatrix_tb/m0/matrix_1}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/mmatrix_tb/m0/mm_idle}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/mmatrix_tb/m0/mm_done}} {{/mmatrix_tb/m0/complete}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/mmatrix_tb/m0/mm_start}} 
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/mmatrix_tb/m0/state}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 30000 ns
+current_wave_config {Untitled 1}
+add_wave {{/mmatrix_tb/matrix_o}} 
+current_wave_config {Untitled 1}
+add_wave {{/mmatrix_tb/data}} 
+relaunch_sim
+run 30000 ns
+relaunch_sim
+relaunch_sim
+current_wave_config {Untitled 1}
+add_wave {{/mmatrix_tb/i}} {{/mmatrix_tb/j}} 
+relaunch_sim
+relaunch_sim
+run 30000 ns
+relaunch_sim
+run 30000 ns
+relaunch_sim
+run 30000 ns
+relaunch_sim
+run 30000 ns
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_sim

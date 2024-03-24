@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/lab_mmatrix/mmatrix/mmatrix.srcs/sources_1/new/mmatrix.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmatrix
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ubuntu/lab_mmatrix/mmatrix/mmatrix.srcs/sim_1/new/mmatrix_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmatrix_tb
+WARNING: [VRFC 10-2938] 'clk' is already implicitly declared on line 28 [/home/ubuntu/lab_mmatrix/mmatrix/mmatrix.srcs/sim_1/new/mmatrix_tb.v:37]
+WARNING: [VRFC 10-2938] 'mm_start' is already implicitly declared on line 31 [/home/ubuntu/lab_mmatrix/mmatrix/mmatrix.srcs/sim_1/new/mmatrix_tb.v:39]
+WARNING: [VRFC 10-2938] 'matrix_a' is already implicitly declared on line 26 [/home/ubuntu/lab_mmatrix/mmatrix/mmatrix.srcs/sim_1/new/mmatrix_tb.v:40]
+WARNING: [VRFC 10-2938] 'matrix_o' is already implicitly declared on line 34 [/home/ubuntu/lab_mmatrix/mmatrix/mmatrix.srcs/sim_1/new/mmatrix_tb.v:41]
+WARNING: [VRFC 10-2938] 'mm_done' is already implicitly declared on line 32 [/home/ubuntu/lab_mmatrix/mmatrix/mmatrix.srcs/sim_1/new/mmatrix_tb.v:42]

@@ -1,0 +1,65 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Sun Dec 31 07:29:17 2023
+[*]
+[dumpfile] "/home/ubuntu/lab_mmatrix/testbench/counter_la_mm/counter_la_mm.vcd"
+[dumpfile_mtime] "Sun Dec 31 07:28:42 2023"
+[dumpfile_size] 41146568
+[savefile] "/home/ubuntu/lab_mmatrix/testbench/counter_la_mm/test_wave.gtkw"
+[timestart] 1281600000
+[size] 1920 867
+[pos] -1 -1
+*-26.000000 1698600000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] counter_la_mm_tb.
+[treeopen] counter_la_mm_tb.uut.
+[treeopen] counter_la_mm_tb.uut.mprj.
+[treeopen] counter_la_mm_tb.uut.mprj.mprj.
+[sst_width] 233
+[signals_width] 319
+[sst_expanded] 1
+[sst_vpaned_height] 237
+@28
+counter_la_mm_tb.uut.mprj.wb_clk_i
+counter_la_mm_tb.uut.mprj.wb_rst_i
+counter_la_mm_tb.uut.mprj.wbs_ack_o
+@22
+counter_la_mm_tb.uut.mprj.wbs_adr_i[31:0]
+@28
+counter_la_mm_tb.uut.mprj.wbs_cyc_i
+@22
+counter_la_mm_tb.uut.mprj.wbs_dat_i[31:0]
+counter_la_mm_tb.uut.mprj.wbs_dat_o[31:0]
+counter_la_mm_tb.uut.mprj.wbs_sel_i[3:0]
+@28
+counter_la_mm_tb.uut.mprj.wbs_stb_i
+counter_la_mm_tb.uut.mprj.wbs_we_i
+counter_la_mm_tb.uut.mprj.mprj.mm1.complete
+@22
+counter_la_mm_tb.uut.mprj.mprj.mm1.count_0[3:0]
+counter_la_mm_tb.uut.mprj.mprj.mm1.count_1[3:0]
+@28
+counter_la_mm_tb.uut.mprj.mprj.mm1.clk
+@24
+counter_la_mm_tb.uut.mprj.mprj.mm1.count_data[5:0]
+@420
+counter_la_mm_tb.uut.mprj.mprj.mm1.matrix_a[31:0]
+@24
+counter_la_mm_tb.uut.mprj.mprj.mm1.matrix_o[31:0]
+counter_la_mm_tb.uut.mprj.mprj.mm1.matrix_adder[63:0]
+counter_la_mm_tb.uut.mprj.mprj.mm1.matrix_mm_0[63:0]
+counter_la_mm_tb.uut.mprj.mprj.mm1.matrix_mm_1[63:0]
+counter_la_mm_tb.uut.mprj.mprj.mm1.matrix_mm_2[63:0]
+counter_la_mm_tb.uut.mprj.mprj.mm1.matrix_mm_3[63:0]
+@28
+counter_la_mm_tb.uut.mprj.mprj.mm1.mm_ack_i
+counter_la_mm_tb.uut.mprj.mprj.mm1.mm_ack_o
+counter_la_mm_tb.uut.mprj.mprj.mm1.mm_done
+counter_la_mm_tb.uut.mprj.mprj.mm1.mm_idle
+@29
+counter_la_mm_tb.uut.mprj.mprj.mm1.mm_en
+@28
+counter_la_mm_tb.uut.mprj.mprj.mm1.mm_start
+counter_la_mm_tb.uut.mprj.mprj.mm1.reset
+counter_la_mm_tb.uut.mprj.mprj.mm1.state[1:0]
+[pattern_trace] 1
+[pattern_trace] 0
