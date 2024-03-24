@@ -1,0 +1,920 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/lab_final_prefetch0102-3/vivado/vitis_prj/hls_caravel_ps'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/lab_final_prefetch0102-3/vivado/vitis_prj/hls_output_pin'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/lab_final_prefetch0102-3/vivado/vitis_prj/hls_read_romcode'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+Command: link_design -top design_1_wrapper -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-454] Reading design checkpoint '/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_axi_intc_0_0/design_1_axi_intc_0_0.dcp' for cell 'design_1_i/axi_intc_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.dcp' for cell 'design_1_i/axi_uartlite_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_blk_mem_gen_0_0/design_1_blk_mem_gen_0_0.dcp' for cell 'design_1_i/blk_mem_gen_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_caravel_0_0/design_1_caravel_0_0.dcp' for cell 'design_1_i/caravel_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_caravel_ps_0_0/design_1_caravel_ps_0_0.dcp' for cell 'design_1_i/caravel_ps_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_output_pin_0_0/design_1_output_pin_0_0.dcp' for cell 'design_1_i/output_pin_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_read_romcode_0_0/design_1_read_romcode_0_0.dcp' for cell 'design_1_i/read_romcode_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_10M_0/design_1_rst_ps7_0_10M_0.dcp' for cell 'design_1_i/rst_ps7_0_10M'
+INFO: [Project 1-454] Reading design checkpoint '/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_spiflash_0_0/design_1_spiflash_0_0.dcp' for cell 'design_1_i/spiflash_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0.dcp' for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_us'
+INFO: [Project 1-454] Reading design checkpoint '/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.12 . Memory (MB): peak = 3071.164 ; gain = 0.000 ; free physical = 3009 ; free virtual = 9632
+INFO: [Netlist 29-17] Analyzing 594 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Parsing XDC File [/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_10M_0/design_1_rst_ps7_0_10M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_10M/U0'
+Finished Parsing XDC File [/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_10M_0/design_1_rst_ps7_0_10M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_10M/U0'
+Parsing XDC File [/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_10M_0/design_1_rst_ps7_0_10M_0.xdc] for cell 'design_1_i/rst_ps7_0_10M/U0'
+Finished Parsing XDC File [/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_10M_0/design_1_rst_ps7_0_10M_0.xdc] for cell 'design_1_i/rst_ps7_0_10M/U0'
+Parsing XDC File [/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Parsing XDC File [/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Parsing XDC File [/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_axi_intc_0_0/design_1_axi_intc_0_0.xdc] for cell 'design_1_i/axi_intc_0/U0'
+Finished Parsing XDC File [/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_axi_intc_0_0/design_1_axi_intc_0_0.xdc] for cell 'design_1_i/axi_intc_0/U0'
+Parsing XDC File [/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_us/inst'
+Finished Parsing XDC File [/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_clocks.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_us/inst'
+Parsing XDC File [/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_axi_intc_0_0/design_1_axi_intc_0_0_clocks.xdc] for cell 'design_1_i/axi_intc_0/U0'
+Finished Parsing XDC File [/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_axi_intc_0_0/design_1_axi_intc_0_0_clocks.xdc] for cell 'design_1_i/axi_intc_0/U0'
+INFO: [Project 1-1714] 1 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3071.164 ; gain = 0.000 ; free physical = 5085 ; free virtual = 8940
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 33 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 24 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 9 instances
+
+27 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:16 . Memory (MB): peak = 3071.164 ; gain = 0.000 ; free physical = 5085 ; free virtual = 8940
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 6 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.78 . Memory (MB): peak = 3071.164 ; gain = 0.000 ; free physical = 5064 ; free virtual = 8929
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 16cf3b607
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3071.164 ; gain = 0.000 ; free physical = 4554 ; free virtual = 8532
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/axi_mem_intercon/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/m_payload_i[66]_i_1 into driver instance design_1_i/axi_mem_intercon/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/s_ready_i_i_2, which resulted in an inversion of 3 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/axi_mem_intercon/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/ar.ar_pipe/USE_RTL_FIFO.data_srl_reg[31][13]_srl32_i_1 into driver instance design_1_i/axi_mem_intercon/s00_couplers/auto_us/inst/gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/ar.ar_pipe/m_axi_araddr[2]_INST_0_i_3, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/RAM128/memory_to_writeBack_MEMORY_READ_DATA[13]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/RAM128/memory_to_writeBack_MEMORY_READ_DATA[13]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/RAM128/memory_to_writeBack_MEMORY_READ_DATA[15]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/RAM128/memory_to_writeBack_MEMORY_READ_DATA[15]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/RAM128/memory_to_writeBack_MEMORY_READ_DATA[16]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/RAM128/memory_to_writeBack_MEMORY_READ_DATA[16]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/RAM256/memory_to_writeBack_MEMORY_READ_DATA[11]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/RAM256/memory_to_writeBack_MEMORY_READ_DATA[11]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/RAM256/memory_to_writeBack_MEMORY_READ_DATA[9]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/RAM256/memory_to_writeBack_MEMORY_READ_DATA[9]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/CsrPlugin_mtvec_base[1]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/CsrPlugin_mtvec_base[1]_i_2, which resulted in an inversion of 5 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/execute_to_memory_ENV_CTRL[1]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/decode_to_execute_DO_EBREAK_i_6, which resulted in an inversion of 11 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/execute_to_memory_REGFILE_WRITE_DATA[31]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/execute_to_memory_REGFILE_WRITE_DATA[31]_i_3, which resulted in an inversion of 4 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/interface10_bank_bus_dat_r[31]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/mgmtsoc_load_storage[31]_i_2, which resulted in an inversion of 9 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[0]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[0]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[10]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[10]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[12]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[12]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[14]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[14]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[17]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[17]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[18]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[18]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[19]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[19]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[20]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[20]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[21]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[21]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[22]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[22]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[23]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[23]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[24]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[24]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[25]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[25]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[26]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[26]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[27]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[27]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[28]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[28]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[29]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[29]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[30]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[30]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[31]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[31]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[8]_i_1 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[8]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/count[0]_i_2 into driver instance design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/memory_to_writeBack_MEMORY_READ_DATA[1]_i_6, which resulted in an inversion of 35 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/caravel_0/inst/soc/core/dbg_uart_count[0]_i_2 into driver instance design_1_i/caravel_0/inst/soc/core/dbg_uart_count[0]_i_4, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/read_romcode_0/inst/BUS0_m_axi_U/bus_read/fifo_rctl/sect_addr_buf[63]_i_1 into driver instance design_1_i/read_romcode_0/inst/BUS0_m_axi_U/bus_read/fifo_rctl/sect_cnt[51]_i_3, which resulted in an inversion of 18 pins
+INFO: [Opt 31-1287] Pulled Inverter design_1_i/read_romcode_0/inst/BUS0_m_axi_U/bus_read/fifo_rctl/start_addr[63]_i_1 into driver instance design_1_i/read_romcode_0/inst/BUS0_m_axi_U/bus_read/fifo_rctl/FSM_sequential_state[1]_i_2, which resulted in an inversion of 57 pins
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 3 load pin(s).
+In IDDR TRANSFORM
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:design_1_i/caravel_0/inst/soc/core/multiregimpl2_regs0_reg
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 25f9358d7
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.72 . Memory (MB): peak = 3291.016 ; gain = 0.000 ; free physical = 4264 ; free virtual = 8285
+INFO: [Opt 31-389] Phase Retarget created 136 cells and removed 215 cells
+INFO: [Opt 31-1021] In phase Retarget, 9 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:design_1_i/caravel_0/inst/soc/core/multiregimpl2_regs0_reg
+INFO: [Opt 31-138] Pushed 4 inverter(s) to 6 load pin(s).
+Phase 2 Constant propagation | Checksum: 201b0c523
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3291.016 ; gain = 0.000 ; free physical = 4915 ; free virtual = 8937
+INFO: [Opt 31-389] Phase Constant propagation created 388 cells and removed 813 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 9 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+CRITICAL WARNING: [Opt 31-430] Found a FDRE that its data pin is undriven. Driver is required to prevent unexpected behavior:design_1_i/caravel_0/inst/soc/core/multiregimpl2_regs0_reg
+Phase 3 Sweep | Checksum: 1ecb7a4d8
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3291.016 ; gain = 0.000 ; free physical = 4908 ; free virtual = 8937
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 652 cells
+INFO: [Opt 31-1021] In phase Sweep, 32 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG design_1_i/caravel_0/inst/housekeeping/csclk_BUFG_inst to drive 615 load(s) on clock net design_1_i/caravel_0/inst/housekeeping/csclk_BUFG
+INFO: [Opt 31-194] Inserted BUFG design_1_i/caravel_0/inst/housekeeping/mprj_io_loader_clock_BUFG_inst to drive 314 load(s) on clock net design_1_i/caravel_0/inst/housekeeping/mprj_io_loader_clock_BUFG
+INFO: [Opt 31-194] Inserted BUFG design_1_i/caravel_0/inst/housekeeping/mprj_io_loader_strobe_BUFG_inst to drive 190 load(s) on clock net design_1_i/caravel_0/inst/housekeeping/mprj_io_loader_strobe_BUFG
+INFO: [Opt 31-194] Inserted BUFG design_1_i/caravel_0/inst/soc/core/flash_clk_BUFG_inst to drive 52 load(s) on clock net design_1_i/caravel_0/inst/soc/core/flash_clk_BUFG
+INFO: [Opt 31-193] Inserted 4 BUFG(s) on clock nets
+Phase 4 BUFG optimization | Checksum: 2563e7a1e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3323.031 ; gain = 32.016 ; free physical = 4906 ; free virtual = 8936
+INFO: [Opt 31-662] Phase BUFG optimization created 4 cells of which 4 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 2563e7a1e
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3323.031 ; gain = 32.016 ; free physical = 4905 ; free virtual = 8936
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 2563e7a1e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3323.031 ; gain = 32.016 ; free physical = 4905 ; free virtual = 8936
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 11 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             136  |             215  |                                              9  |
+|  Constant propagation         |             388  |             813  |                                              9  |
+|  Sweep                        |               0  |             652  |                                             32  |
+|  BUFG optimization            |               4  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             11  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3323.031 ; gain = 0.000 ; free physical = 4901 ; free virtual = 8936
+Ending Logic Optimization Task | Checksum: 1ab89deb7
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3323.031 ; gain = 32.016 ; free physical = 4900 ; free virtual = 8936
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 2 BRAM(s) out of a total of 21 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-201] Structural ODC has moved 2 WE to EN ports
+Number of BRAM Ports augmented: 6 newly gated: 6 Total Ports: 42
+Ending PowerOpt Patch Enables Task | Checksum: 1e289f5ac
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.58 . Memory (MB): peak = 3617.953 ; gain = 0.000 ; free physical = 4805 ; free virtual = 8904
+Ending Power Optimization Task | Checksum: 1e289f5ac
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 3617.953 ; gain = 294.922 ; free physical = 4817 ; free virtual = 8916
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 1145ef3dd
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.98 . Memory (MB): peak = 3617.953 ; gain = 0.000 ; free physical = 4741 ; free virtual = 8890
+Ending Final Cleanup Task | Checksum: 1145ef3dd
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3617.953 ; gain = 0.000 ; free physical = 4756 ; free virtual = 8907
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3617.953 ; gain = 0.000 ; free physical = 4745 ; free virtual = 8896
+Ending Netlist Obfuscation Task | Checksum: 1145ef3dd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3617.953 ; gain = 0.000 ; free physical = 4728 ; free virtual = 8879
+INFO: [Common 17-83] Releasing license: Implementation
+95 Infos, 0 Warnings, 3 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:21 . Memory (MB): peak = 3617.953 ; gain = 546.789 ; free physical = 4713 ; free virtual = 8865
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3617.953 ; gain = 0.000 ; free physical = 4504 ; free virtual = 8659
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 6 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design -directive ExtraNetDelay_high
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 6 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 6 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 42 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'ExtraNetDelay_high' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 6 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4324 ; free virtual = 8200
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: df9cd596
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4324 ; free virtual = 8200
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4324 ; free virtual = 8200
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 16744b082
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.78 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4336 ; free virtual = 8225
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 14082fe45
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4287 ; free virtual = 8225
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 14082fe45
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4286 ; free virtual = 8225
+Phase 1 Placer Initialization | Checksum: 14082fe45
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4285 ; free virtual = 8225
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 150856971
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4258 ; free virtual = 8219
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 207ba1ee3
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4243 ; free virtual = 8217
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 207ba1ee3
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4242 ; free virtual = 8217
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 616 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 212 nets or LUTs. Breaked 0 LUT, combined 212 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4675 ; free virtual = 8839
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            212  |                   212  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |            212  |                   212  |           0  |           4  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.1 Physical Synthesis In Placer | Checksum: 18d0e3e4c
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:22 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4661 ; free virtual = 8838
+Phase 2.4 Global Placement Core | Checksum: 29bedcae2
+
+Time (s): cpu = 00:01:46 ; elapsed = 00:00:30 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4543 ; free virtual = 8834
+Phase 2 Global Placement | Checksum: 29bedcae2
+
+Time (s): cpu = 00:01:46 ; elapsed = 00:00:30 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4543 ; free virtual = 8834
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 25625459d
+
+Time (s): cpu = 00:01:49 ; elapsed = 00:00:31 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4533 ; free virtual = 8833
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1d781d127
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:00:32 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4515 ; free virtual = 8834
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 290d1467d
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:00:32 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4511 ; free virtual = 8833
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 22f6265f4
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:00:33 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4510 ; free virtual = 8833
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 12b938bad
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:00:37 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4434 ; free virtual = 8824
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1bed3bdf7
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:00:38 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4424 ; free virtual = 8824
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 2780ed64c
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:00:38 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4423 ; free virtual = 8824
+Phase 3 Detail Placement | Checksum: 2780ed64c
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:00:38 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4421 ; free virtual = 8824
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Place 46-20] Placer is running with the ExtraNetDelay_high directive. Post Placement Optimization may take longer to complete with ExtraNetDelay_high compared to other directives.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1ac875564
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 6 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=4.502 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1262e780a
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.34 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4382 ; free virtual = 8820
+INFO: [Place 46-33] Processed net design_1_i/caravel_0/inst/soc/core/int_rst, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 1df2caf2f
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.68 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4377 ; free virtual = 8819
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1ac875564
+
+Time (s): cpu = 00:02:07 ; elapsed = 00:00:41 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4376 ; free virtual = 8819
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=4.502. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 221be2e3f
+
+Time (s): cpu = 00:02:07 ; elapsed = 00:00:42 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4373 ; free virtual = 8818
+
+Time (s): cpu = 00:02:07 ; elapsed = 00:00:42 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4373 ; free virtual = 8818
+Phase 4.1 Post Commit Optimization | Checksum: 221be2e3f
+
+Time (s): cpu = 00:02:07 ; elapsed = 00:00:42 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4372 ; free virtual = 8818
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 221be2e3f
+
+Time (s): cpu = 00:02:07 ; elapsed = 00:00:42 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4370 ; free virtual = 8818
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                2x2|
+|___________|___________________|___________________|
+|      South|                1x1|                2x2|
+|___________|___________________|___________________|
+|       East|                1x1|                4x4|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 221be2e3f
+
+Time (s): cpu = 00:02:07 ; elapsed = 00:00:42 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4369 ; free virtual = 8818
+Phase 4.3 Placer Reporting | Checksum: 221be2e3f
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:00:42 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4368 ; free virtual = 8818
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4367 ; free virtual = 8818
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:00:42 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4367 ; free virtual = 8818
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1dac63557
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:00:42 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4366 ; free virtual = 8818
+Ending Placer Task | Checksum: 163729800
+
+Time (s): cpu = 00:02:08 ; elapsed = 00:00:42 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4365 ; free virtual = 8818
+INFO: [Common 17-83] Releasing license: Implementation
+133 Infos, 0 Warnings, 3 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:10 ; elapsed = 00:00:43 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4386 ; free virtual = 8840
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.65 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4337 ; free virtual = 8821
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file design_1_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.19 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4321 ; free virtual = 8810
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.14 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4315 ; free virtual = 8810
+Command: phys_opt_design -directive AggressiveExplore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: AggressiveExplore
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 5.11s |  WALL: 1.89s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4284 ; free virtual = 8800
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 6 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=4.502 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 4f8acb83
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.58 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4277 ; free virtual = 8800
+
+Phase 2 Hold Fix Optimization
+INFO: [Physopt 32-668] Estimated Timing Summary | WNS=4.502 | TNS=0.000 | WHS=-0.663 | THS=-1.978 |
+INFO: [Physopt 32-45] Identified 2 candidate nets for hold slack optimization.
+INFO: [Physopt 32-234] Optimized 2 nets. Inserted 0 new ZHOLD_DELAYs. Calibrated 0 existing ZHOLD_DELAYs. Inserted 2 buffers.
+
+INFO: [Physopt 32-668] Estimated Timing Summary | WNS=4.502 | TNS=0.000 | WHS=-0.114 | THS=-0.677 |
+Phase 2 Hold Fix Optimization | Checksum: 4f8acb83
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4270 ; free virtual = 8800
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4270 ; free virtual = 8800
+INFO: [Physopt 32-669] Post Physical Optimization Timing Summary | WNS=4.502 | TNS=0.000 | WHS=-0.114 | THS=-0.677 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization            |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Fanout                  |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Single Cell Placement   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Multi Cell Placement    |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Rewire                  |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Critical Cell           |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  SLR Crossing            |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  DSP Register            |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register           |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register           |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register          |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Critical Pin            |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Very High Fanout        |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Total                   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Summary of Hold Fix Optimizations
+=================================
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization               |  WHS Gain (ns)  |  THS Gain (ns)  |  Added LUTs  |  Added FFs  |  Optimized Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT1 and ZHOLD Insertion   |          0.549  |          1.301  |           2  |          0  |               2  |           0  |           1  |  00:00:01  |
+|  Total                      |          0.549  |          1.301  |           2  |          0  |               2  |           0  |           1  |  00:00:01  |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4270 ; free virtual = 8800
+Ending Physical Synthesis Task | Checksum: 1bb3e457a
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4268 ; free virtual = 8800
+INFO: [Common 17-83] Releasing license: Implementation
+150 Infos, 0 Warnings, 3 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.92 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 4230 ; free virtual = 8793
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/impl_1/design_1_wrapper_physopt.dcp' has been generated.
+Command: route_design -directive NoTimingRelaxation
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 6 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 6 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'NoTimingRelaxation'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 6 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 40bc3476 ConstDB: 0 ShapeSum: 8b1ebe42 RouteDB: 0
+Post Restoration Checksum: NetGraph: 9a09a6d5 NumContArr: eef95c11 Constraints: 0 Timing: 0
+Phase 1 Build RT Design | Checksum: 1890302e6
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:21 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 3793 ; free virtual = 8667
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 1890302e6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 3768 ; free virtual = 8644
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 1890302e6
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 3768 ; free virtual = 8644
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 205d07209
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:28 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 3700 ; free virtual = 8619
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.723  | TNS=0.000  | WHS=-0.263 | THS=-128.262|
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00771461 %
+  Global Horizontal Routing Utilization  = 0.000760649 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 14043
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 14035
+  Number of Partially Routed Nets     = 8
+  Number of Node Overlaps             = 6
+
+Phase 2 Router Initialization | Checksum: 28bb62689
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:30 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 3673 ; free virtual = 8607
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 28bb62689
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:30 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 3672 ; free virtual = 8607
+Phase 3 Initial Routing | Checksum: 141720b88
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:31 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 3658 ; free virtual = 8605
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1736
+ Number of Nodes with overlaps = 284
+ Number of Nodes with overlaps = 104
+ Number of Nodes with overlaps = 27
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.548  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 26689d62a
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:46 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 3450 ; free virtual = 8598
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.552  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 21484b0df
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:49 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 3420 ; free virtual = 8601
+Phase 4 Rip-up And Reroute | Checksum: 21484b0df
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:49 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 3419 ; free virtual = 8601
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 262b1c10a
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:49 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 3412 ; free virtual = 8601
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.565  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Delay CleanUp | Checksum: 262b1c10a
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:50 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 3411 ; free virtual = 8601
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 262b1c10a
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:50 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 3410 ; free virtual = 8600
+Phase 5 Delay and Skew Optimization | Checksum: 262b1c10a
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:50 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 3410 ; free virtual = 8600
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1bd43799c
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:50 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 3399 ; free virtual = 8600
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=4.565  | TNS=0.000  | WHS=0.033  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 212303e57
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:50 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 3399 ; free virtual = 8600
+Phase 6 Post Hold Fix | Checksum: 212303e57
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:50 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 3398 ; free virtual = 8600
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.78684 %
+  Global Horizontal Routing Utilization  = 3.58916 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 218f65e0c
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:51 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 3397 ; free virtual = 8600
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 218f65e0c
+
+Time (s): cpu = 00:01:14 ; elapsed = 00:00:51 . Memory (MB): peak = 3638.980 ; gain = 0.000 ; free physical = 3396 ; free virtual = 8600
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 23e4e887b
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:52 . Memory (MB): peak = 3645.844 ; gain = 6.863 ; free physical = 3381 ; free virtual = 8600
+
+Phase 10 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=4.566  | TNS=0.000  | WHS=0.033  | THS=0.000  |
+
+Phase 10 Post Router Timing | Checksum: 201ef948f
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:54 . Memory (MB): peak = 3645.844 ; gain = 6.863 ; free physical = 3351 ; free virtual = 8597
+INFO: [Route 35-61] The design met the timing requirement.
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:54 . Memory (MB): peak = 3645.844 ; gain = 6.863 ; free physical = 3450 ; free virtual = 8698
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+170 Infos, 0 Warnings, 3 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:31 ; elapsed = 00:00:57 . Memory (MB): peak = 3645.844 ; gain = 6.863 ; free physical = 3450 ; free virtual = 8698
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.86 . Memory (MB): peak = 3648.812 ; gain = 2.969 ; free physical = 3407 ; free virtual = 8689
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+Command: report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 6 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/impl_1/design_1_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 6 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/ubuntu/lab_final_prefetch0102-3/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+183 Infos, 1 Warnings, 3 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file design_1_wrapper_route_status.rpt -pb design_1_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 6 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file design_1_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file design_1_wrapper_bus_skew_routed.rpt -pb design_1_wrapper_bus_skew_routed.pb -rpx design_1_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 6 CPUs
+Command: write_bitstream -force design_1_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 6 threads
+WARNING: [DRC 23-804] Only the first 20 REQP-1840 messages were issued by report_drc. An additional 1 messages have not been issued. Use 'set_property MAX_MESSAGES <number> [get_drc_check REQP-1840]' to change the number of messages that should be reported.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/mul_out input design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/mul_out/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/mul_out input design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/mul_out/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/mul_out__0 input design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/mul_out__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/mul_out__0 input design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/mul_out__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/mul_out__1 input design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/mul_out__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_0 input design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_0 input design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_0__0 input design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_0__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_0__0 input design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_0__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_0__1 input design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_0__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_1 input design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_1 input design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_1__0 input design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_1__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_1__0 input design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_1__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_1__1 input design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_1__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_2 input design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_2 input design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_2__0 input design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_2__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_2__0 input design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_2__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_2__1 input design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_2__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_3 input design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_3 input design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_3__0 input design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_3__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_3__0 input design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_3__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_3__1 input design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_3__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/mul_out output design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/mul_out/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/mul_out__0 output design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/mul_out__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/mul_out__1 output design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/mul_out__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_0 output design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_0__0 output design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_0__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_0__1 output design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_0__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_1 output design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_1__0 output design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_1__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_1__1 output design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_1__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_2 output design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_2__0 output design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_2__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_2__1 output design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_2__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_3 output design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_3__0 output design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_3__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_3__1 output design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_3__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/mul_out multiplier stage design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/mul_out/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/mul_out__0 multiplier stage design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/mul_out__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/mul_out__1 multiplier stage design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/mul_out__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_0 multiplier stage design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_0__0 multiplier stage design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_0__1 multiplier stage design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_0__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_1 multiplier stage design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_1__0 multiplier stage design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_1__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_1__1 multiplier stage design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_1__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_2 multiplier stage design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_2__0 multiplier stage design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_2__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_2__1 multiplier stage design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_2__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_3 multiplier stage design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_3__0 multiplier stage design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_3__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_3__1 multiplier stage design_1_i/caravel_0/inst/mprj/mprj/mm1/matrix_mm_3__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell design_1_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin design_1_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A2)+((~A2)*(~A5)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC REQP-1571] connects_D: The FDRE cell design_1_i/caravel_0/inst/soc/core/multiregimpl2_regs0_reg has no driver for the D input pin. To protect against unwanted transitions in all flows, the D input pin is required to have a driver. To resolve this violation, modify the design so that the D input pin has an active signal or constant logic-level tie-off.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENARDEN (net: design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (design_1_i/spiflash_0/inst/bytecount_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENARDEN (net: design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (design_1_i/spiflash_0/inst/bytecount_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENARDEN (net: design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (design_1_i/spiflash_0/inst/bytecount_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENARDEN (net: design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (design_1_i/spiflash_0/inst/bytecount_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENARDEN (net: design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (design_1_i/spiflash_0/inst/bytecount_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENARDEN (net: design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (design_1_i/spiflash_0/inst/bytecount_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENARDEN (net: design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (design_1_i/spiflash_0/inst/bytecount_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENARDEN (net: design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (design_1_i/spiflash_0/inst/bytecount_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENARDEN (net: design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (design_1_i/spiflash_0/inst/bytecount_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENARDEN (net: design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (design_1_i/spiflash_0/inst/bytecount_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENARDEN (net: design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (design_1_i/spiflash_0/inst/bytecount_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENARDEN (net: design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (design_1_i/spiflash_0/inst/bytecount_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENARDEN (net: design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (design_1_i/spiflash_0/inst/bytecount_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENARDEN (net: design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (design_1_i/spiflash_0/inst/bytecount_reg[12]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENARDEN (net: design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (design_1_i/spiflash_0/inst/bytecount_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENARDEN (net: design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (design_1_i/spiflash_0/inst/bytecount_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENARDEN (net: design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (design_1_i/spiflash_0/inst/bytecount_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENARDEN (net: design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (design_1_i/spiflash_0/inst/bytecount_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENARDEN (net: design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (design_1_i/spiflash_0/inst/bytecount_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram has an input control pin design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/ENARDEN (net: design_1_i/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/ENA_I) which is driven by a register (design_1_i/spiflash_0/inst/bytecount_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg has an input control pin design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg/ENARDEN (net: design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_ready) which is driven by a register (design_1_i/caravel_0/inst/housekeeping/wb_ack_o_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg has an input control pin design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg/ENARDEN (net: design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_ready) which is driven by a register (design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/len_reg[24]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg has an input control pin design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg/ENARDEN (net: design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_ready) which is driven by a register (design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/len_reg[25]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg has an input control pin design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg/ENARDEN (net: design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_ready) which is driven by a register (design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/len_reg[26]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg has an input control pin design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg/ENARDEN (net: design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_ready) which is driven by a register (design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/len_reg[27]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg has an input control pin design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg/ENARDEN (net: design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_ready) which is driven by a register (design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/len_reg[28]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg has an input control pin design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg/ENARDEN (net: design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_ready) which is driven by a register (design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/len_reg[29]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg has an input control pin design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg/ENARDEN (net: design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_ready) which is driven by a register (design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/len_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg has an input control pin design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg/ENARDEN (net: design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_ready) which is driven by a register (design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/len_reg[30]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg has an input control pin design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg/ENARDEN (net: design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_ready) which is driven by a register (design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/len_reg[31]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg has an input control pin design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg/ENARDEN (net: design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_ready) which is driven by a register (design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/len_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg has an input control pin design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg/ENARDEN (net: design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_ready) which is driven by a register (design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/len_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg has an input control pin design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg/ENARDEN (net: design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_ready) which is driven by a register (design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/len_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg has an input control pin design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg/ENARDEN (net: design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_ready) which is driven by a register (design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/len_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg has an input control pin design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg/ENARDEN (net: design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_ready) which is driven by a register (design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/len_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg has an input control pin design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg/ENARDEN (net: design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_ready) which is driven by a register (design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/len_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg has an input control pin design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg/ENARDEN (net: design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_ready) which is driven by a register (design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/len_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg has an input control pin design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg/ENARDEN (net: design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_ready) which is driven by a register (design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/state_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg has an input control pin design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg/ENARDEN (net: design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_ready) which is driven by a register (design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/state_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg has an input control pin design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/banks_0_reg/ENARDEN (net: design_1_i/caravel_0/inst/soc/core/VexRiscv/IBusCachedPlugin_cache/IBusCachedPlugin_iBusRsp_stages_1_output_m2sPipe_ready) which is driven by a register (design_1_i/caravel_0/inst/mprj/mprj/WA1/fir/state_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC RTSTAT-10] No routable loads: 11 net(s) have no routable loads. The problem bus(es) and/or net(s) are design_1_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, design_1_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], design_1_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0], design_1_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, design_1_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, design_1_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, and design_1_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/user_valid.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 101 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 6 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+12 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:23 ; elapsed = 00:00:18 . Memory (MB): peak = 3941.484 ; gain = 215.816 ; free physical = 2972 ; free virtual = 8601
+INFO: [Common 17-206] Exiting Vivado at Tue Jan  2 13:34:55 2024...
